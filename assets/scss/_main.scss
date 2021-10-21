@@ -11,6 +11,11 @@ html {
   box-sizing: inherit;
 }
 
+::selection {
+  color: white;
+  background-color: #b72552;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -47,12 +52,12 @@ body {
     color: $light-color;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background-color: $dark-background;
     color: $dark-color;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background-color: $light-background;
     color: $light-color;
   }
@@ -189,7 +194,9 @@ figure {
   }
 }
 
-em, i, strong {
+em,
+i,
+strong {
   // Default
   color: black;
 
@@ -201,11 +208,11 @@ em, i, strong {
     color: black;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     color: white;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     color: black;
   }
 }
@@ -229,21 +236,21 @@ code {
     background: $light-background-secondary;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background: $dark-background-secondary;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background: $light-background-secondary;
   }
 }
 
 pre {
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background-color: $dark-background-secondary;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background-color: $light-background-secondary;
   }
 
@@ -268,16 +275,16 @@ pre {
     @media (prefers-color-scheme: dark) {
       color: inherit;
     }
-  
+
     @media (prefers-color-scheme: light) {
       color: #ccc;
     }
-  
-    [data-theme=dark] & {
+
+    [data-theme="dark"] & {
       color: inherit;
     }
-  
-    [data-theme=light] & {
+
+    [data-theme="light"] & {
       color: #ccc;
     }
   }
@@ -362,11 +369,11 @@ hr {
     background: $light-border-color;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background: $dark-border-color;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background: $light-border-color;
   }
 }
